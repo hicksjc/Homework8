@@ -1,0 +1,22 @@
+nav {
+    max-width: 981px;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: white solid 2px;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    .links {
+        height: 42px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        a {
+            border-right: 1px dotted white;
+            padding: 12px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+    }
+}
