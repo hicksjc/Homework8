@@ -1,0 +1,18 @@
+footer {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+footer .location {
+  padding-top: 35px;
+  padding-left: 268px;
+  color: white;
+}
+footer .phone {
+  color: white;
+  padding-top: 25px;
+  padding-right: 50px;
+}

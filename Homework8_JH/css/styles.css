@@ -29,13 +29,13 @@ nav {
   overflow: auto;
 }
 nav .links {
+  width: 100%;
   height: 42px;
   text-align: center;
   display: flex;
   justify-content: space-between;
 }
 nav .links a {
-  border-right: 1px dotted white;
   padding: 12px;
   text-decoration: none;
   color: white;
@@ -80,9 +80,9 @@ nav .links a {
   height: 40px;
 }
 
-.hero1 {
+.hero-contact {
   max-width: 100%;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Contact.png);
   background-repeat: no-repeat;
@@ -91,7 +91,7 @@ nav .links a {
   padding-top: 20px;
   position: relative;
 }
-.hero1 .title {
+.hero-contact .title {
   position: absolute;
   width: 385px;
   height: 270px;
@@ -99,16 +99,16 @@ nav .links a {
   left: 37%;
   text-align: center;
 }
-.hero1 .title h1 {
+.hero-contact .title h1 {
   margin-top: 15%;
   color: white;
   white-space: nowrap;
 }
-.hero1 .title p {
+.hero-contact .title p {
   color: white;
   font-style: italic;
 }
-.hero1 .title .menu {
+.hero-contact .title .menu {
   margin-top: 5%;
   border-radius: 20px;
   border: none;
@@ -118,14 +118,74 @@ nav .links a {
   height: 40px;
 }
 
+.hero-about {
+  max-width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Contact.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  position: relative;
+}
+.hero-about .title {
+  position: absolute;
+  width: 385px;
+  height: 270px;
+  top: 30%;
+  left: 37%;
+  text-align: center;
+}
+.hero-about .title h1 {
+  margin-top: 15%;
+  color: white;
+  white-space: nowrap;
+}
+.hero-about .title p {
+  color: white;
+  font-style: italic;
+}
+
+.hero-gallery {
+  max-width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Contact.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  position: relative;
+}
+.hero-gallery .title {
+  position: absolute;
+  width: 385px;
+  height: 270px;
+  margin: 0 auto;
+  top: 30%;
+  left: 37%;
+  text-align: center;
+}
+.hero-gallery .title h1 {
+  margin-top: 15%;
+  color: white;
+  text-align: center;
+}
+.hero-gallery .title p {
+  color: white;
+  font-style: italic;
+}
+
 .Dishes-to-order {
   height: 570px;
-  max-width: 1290px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   position: relative;
   padding-top: 61px;
   justify-content: center;
+  background-color: #f1f1f1;
 }
 .Dishes-to-order .section-title1 h1 {
   font-size: 3rem;
@@ -138,65 +198,66 @@ nav .links a {
 .Dishes-to-order .food-examples {
   columns: 4;
   column-gap: 120px;
-  height: 300px;
+  height: 500px;
   width: 890px;
-  margin: 0px auto 0 155px;
+  margin: 0px auto 0 275px;
   justify-content: center;
+  list-style-type: none;
 }
-.Dishes-to-order .food-examples .Sushi {
-  height: 222.5px;
+.Dishes-to-order .food-examples li {
   width: 222.5px;
+  height: 500px;
+}
+.Dishes-to-order .food-examples li .Sushi {
+  height: 222.5px;
+  width: 100%;
   line-height: 222.5px;
   background-image: url(../images/Sushi.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-right: 10px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
-.Dishes-to-order .food-examples .Sushi h3 {
-  color: white;
-}
-.Dishes-to-order .food-examples .Pizza {
+.Dishes-to-order .food-examples li .Pizza {
   height: 222.5px;
-  width: 222.5px;
+  width: 100%;
   line-height: 222.5px;
   background-image: url(../images/Pizza.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-right: 20px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
-.Dishes-to-order .food-examples .Pizza h3 {
-  color: white;
-}
-.Dishes-to-order .food-examples .Burgers {
+.Dishes-to-order .food-examples li .Burgers {
   height: 222.5px;
-  width: 222.5px;
+  width: 100%;
   line-height: 222.5px;
   background-image: url(../images/Cheeseburger.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-right: 20px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
-.Dishes-to-order .food-examples .Burgers h3 {
-  color: white;
-}
-.Dishes-to-order .food-examples .Desserts {
+.Dishes-to-order .food-examples li .Desserts {
   height: 222.5px;
-  width: 222.5px;
+  width: 100%;
   line-height: 222.5px;
   background-image: url(../images/Dessert.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
-.Dishes-to-order .food-examples .Desserts h3 {
-  color: white;
+.Dishes-to-order .food-examples li .text {
+  background-color: #fff;
+  height: 120px;
+  border-radius: 0 0 20px 20px;
+}
+.Dishes-to-order .food-examples li .text .text-header {
+  padding-top: 20px;
 }
 
 .content-section1 {
@@ -214,7 +275,7 @@ nav .links a {
 }
 .content-section1 .three-columns .Address {
   border-radius: 20px;
-  background-color: #bfbfbf;
+  background-color: #f1f1f1;
   width: 376px;
   height: 216px;
   display: flex;
@@ -224,7 +285,7 @@ nav .links a {
 }
 .content-section1 .three-columns .phone {
   border-radius: 20px;
-  background-color: #bfbfbf;
+  background-color: #f1f1f1;
   width: 376px;
   height: 216px;
   display: flex;
@@ -234,13 +295,381 @@ nav .links a {
 }
 .content-section1 .three-columns .email {
   border-radius: 20px;
-  background-color: #bfbfbf;
+  background-color: #f1f1f1;
   width: 376px;
   height: 216px;
   display: flex;
   text-align: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.about-content {
+  height: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.about-content .two-columns {
+  columns: 2;
+  display: flex;
+  max-width: 100%;
+  height: 387px;
+  background-color: #cfcfcf;
+}
+.about-content .two-columns .Welcome {
+  align-self: left;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-content .two-columns .Welcome h1 {
+  color: #414549;
+}
+.about-content .two-columns .Welcome h5 {
+  color: #b6b0ab;
+}
+.about-content .two-columns .Welcome .text-wrapper {
+  width: 40%;
+  display: inline-block;
+  margin: 0 auto;
+}
+.about-content .two-columns .Welcome .text-wrapper p {
+  color: #aab4b8;
+}
+.about-content .two-columns .image {
+  width: 80%;
+  height: 100%;
+  background-image: url(../images/About/AmeliaMcloughlin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-content .our-team {
+  height: 893px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding-top: 61px;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+.about-content .our-team .our-team-title h1 {
+  font-size: 3rem;
+  color: #414549;
+}
+.about-content .our-team .our-team-title p {
+  font-size: 18px;
+  color: #9a9a9a;
+}
+.about-content .our-team .team {
+  columns: 3;
+  column-gap: 120px;
+  height: 100%;
+  width: 890px;
+  margin: 0px auto 0px 275px;
+  justify-content: center;
+  list-style-type: none;
+}
+.about-content .our-team .team li {
+  width: 300px;
+  height: 500px;
+}
+.about-content .our-team .team li .Darryl {
+  height: 300px;
+  width: 100%;
+  line-height: 300px;
+  background-image: url(../images/About/DarrylSears.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.about-content .our-team .team li .Kean {
+  height: 300px;
+  width: 100%;
+  line-height: 300px;
+  background-image: url(../images/About/KeanTucker.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.about-content .our-team .team li .Aliya {
+  height: 300px;
+  width: 100%;
+  line-height: 300px;
+  background-image: url(../images/About/AliyaDavis.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.about-content .our-team .team li .text {
+  background-color: #cfcfcf;
+  height: 200px;
+  border-radius: 0 0 20px 20px;
+  white-space: normal;
+}
+.about-content .our-team .team li .text .text-header {
+  padding-top: 20px;
+}
+.about-content .our-team .team li .text .text-para {
+  white-space: normal;
+}
+
+@media screen and (max-width: 1060px) {
+  .team {
+    columns: 3;
+    column-gap: 120px;
+    height: 100%;
+    width: 890px;
+    margin: 0px auto 0 70px !important;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .team li {
+    width: 100px;
+    height: 200px;
+  }
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+
+.recipes {
+  width: 818px;
+  min-height: 200px;
+  margin: 0 auto 55px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recipes .recipe {
+  width: 236px;
+  height: 304px;
+  margin-bottom: 55px;
+}
+.recipes .recipe-1 {
+  background-image: url(../images/Gallery/Burger1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.recipes .recipe-1 .content {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.recipes .recipe-1:hover > .content {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: inline-block;
+  width: 236px;
+  height: 304px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.recipes .recipe-2 {
+  background-image: url(../images/Gallery/Food2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.recipes .recipe-2 .content {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.recipes .recipe-2:hover > .content {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: inline-block;
+  width: 236px;
+  height: 304px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.recipes .recipe-3 {
+  background-image: url(../images/Gallery/Food3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.recipes .recipe-3 .content {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.recipes .recipe-3:hover > .content {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: inline-block;
+  width: 236px;
+  height: 304px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.recipes .recipe-4 {
+  background-image: url(../images/Gallery/Food4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.recipes .recipe-4 .content {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.recipes .recipe-4:hover > .content {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: inline-block;
+  width: 236px;
+  height: 304px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.recipes .recipe-5 {
+  background-image: url(../images/Gallery/Food5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.recipes .recipe-5 .content {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.recipes .recipe-5:hover > .content {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: inline-block;
+  width: 236px;
+  height: 304px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.recipes .recipe-6 {
+  background-image: url(../images/Gallery/Food6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.recipes .recipe-6 .content {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.recipes .recipe-6:hover > .content {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: inline-block;
+  width: 236px;
+  height: 304px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.recipes .recipe-7 {
+  background-image: url(../images/Gallery/Food7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.recipes .recipe-7 .content {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.recipes .recipe-7:hover > .content {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: inline-block;
+  width: 236px;
+  height: 304px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.recipes .recipe-8 {
+  background-image: url(../images/Gallery/Food8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.recipes .recipe-8 .content {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.recipes .recipe-8:hover > .content {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: inline-block;
+  width: 236px;
+  height: 304px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.recipes .recipe-9 {
+  background-image: url(../images/Gallery/Food9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.recipes .recipe-9 .content {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.recipes .recipe-9:hover > .content {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: inline-block;
+  width: 236px;
+  height: 304px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 footer {
